@@ -1,0 +1,19 @@
+# Backend - Java/Spring
+/backend/carwash-api/target/
+*.log
+*.class
+
+# Frontend - Angular/Node
+/frontend/carwash-ui/node_modules/
+dist/
+.angular/
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+*.iws
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
