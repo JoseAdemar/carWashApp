@@ -28,18 +28,18 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          key: ${{ runner.os }}-maven-${{ hashFiles('backend/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
 
       - name: Build with Maven
-        working-directory: backend/carwash-api
+        working-directory: backend
         run: mvn clean install -DskipTests=false
 
       - name: Run tests
-        working-directory: backend/carwash-api
+        working-directory: backend
         run: mvn test
 
       - name: Checkstyle
-        working-directory: backend/carwash-api
+        working-directory: backend
         run: mvn checkstyle:check || true
