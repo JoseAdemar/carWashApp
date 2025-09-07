@@ -1,50 +1,28 @@
-# Backend - Java/Spring
+# Backend - Maven
 /backend/carwash-api/target/
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-# IDEs - STS (Spring Tool Suite)
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-# IDEs - IntelliJ IDEA
+# IDEs
 .idea
 *.iws
 *.iml
 *.ipr
-
-# IDEs - VS Code
 .vscode/
-
-# IDEs - NetBeans
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+.settings
+.springBeans
+*.class
 
 # Frontend - Angular/Node
 /frontend/carwash-ui/node_modules/
-dist/
-.angular/
+/frontend/carwash-ui/dist/
+/frontend/carwash-ui/.angular/
 
-# Arquivos de Sistema Operacional
+# Arquivos de sistema
 .DS_Store
 Thumbs.db
 
-# Arquivos de Log
+# Logs
 *.log
-
-# Outros
-HELP.md
-*.class
